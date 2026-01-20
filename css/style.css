@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* End CSS Reset */
+
+html {
+  --vg-orange: #ff9b2b;
+}
+
+.birthday-invite {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+
+  background-color: var(--vg-orange);
+  background-image: url("/image/balloons.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  & .card {
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    padding: 2em;
+    border: 2px solid #000000;
+  }
+}
